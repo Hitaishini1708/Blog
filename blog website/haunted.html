@@ -1,0 +1,256 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haunted Locations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color:#5A5A5A;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      background:#1C1C1C;
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-family:'BlackChancery',Medieval;
+      color:#B22222;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #222;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e60073;
+    }
+    .category-toggle {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .toggle-button {
+      background: #00FF7F;
+      border: none;
+      padding: 1rem ;
+      color:#0D0D0D;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform 0.3s,box-shadow o.3s;
+    }
+    .toggle-button:hover {
+      background-color:#39FF14;
+      box-shadow:0 0 15px #39FF14,0 0 30px #39FF14;
+    }
+    .locations {
+      display: none;
+      padding: 2rem;
+    }
+    .location {
+      background: #111;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-left: 5px solid #e60073;
+    }
+    .highlight {
+      color:#B0C4DE;
+    }
+  .slider {
+  width: 100vw;
+  padding: 40px;
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(to right, #111, #222);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  perspective: 1000px;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(5 * 70vw * 2); /* 5 images duplicated */
+  animation: scroll 20s linear infinite;
+  transform-style: preserve-3d;
+}
+
+.slide {
+  width: 30vw;
+  flex-shrink: 0;
+  display: flexbox;
+  height:100%;
+  align-items: center;
+  justify-content: center;
+  transition: transform 10s ease-in-out;
+}
+
+.slide img {
+  width: 90%;
+  height: 300px;
+  object-fit: fit;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+  transition: transform 0.8s ease-in-out;
+}
+
+.slider-track:hover .slide img {
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-350vw); /* Adjust based on 5 images */
+  }
+}
+
+   
+    
+  </style>
+</head>
+<body>
+  <header>Haunted Places Around the World</header>
+  <nav>
+    <a href="blog.html">Home</a>
+    
+  </nav>
+
+  <div class="category-toggle">
+    <button class="toggle-button" onclick="toggleLocations()">Know more about these locations</button>
+  </div>
+
+  <section class="locations" id="locations">
+    <div class="location"><span class="highlight">1. Eastern State Penitentiary<p>Eastern State Penitentiary, located in Philadelphia, Pennsylvania, was once a highly regarded and expensive prison, known for its grand architecture and the "Pennsylvania System" of solitary confinement. Today, it's a historic site with crumbling cellblocks and empty guard towers, open to the public for tours. The prison held nearly 85,000 people over its history, including Al Capone and "Slick Willie" Sutton. 
+Here's a more detailed look:
+History:
+Eastern State Penitentiary was built in 1829 and is considered the world's first "penitentiary" designed to encourage regret in prisoners. 
+"Pennsylvania System":
+The prison's founders believed that solitary confinement could help reform criminals, and this system was adopted by many other prisons around the world. 
+Architecture:
+The prison's distinctive "wagon-wheel" floor plan and Gothic architecture set a standard for penal reform. 
+Famous Inmates:
+Notable prisoners included Al Capone, bank robber "Slick Willie" Sutton, and many others. 
+Historic Site:
+Today, visitors can explore the prison's cellblocks, learn about its history, and see exhibits on famous inmates and escape stories. 
+Notable Features:
+The prison's vaulted, sky-lit cells and its strict discipline made it a famous institution. 
+Mission:
+Eastern State Penitentiary Historic Site is a nonprofit organization dedicated to preserving and sharing the history of the prison.  </p></span> – Pennsylvania, USA</div>
+    <div class="location"><span class="highlight">2. Aokigahara Forest<p> the Aokigahara forest, “is known as a place where many people choose to commit suicide,” said Karen Nakamura, a professor of anthropology at the University of California, Berkeley, who studies disability and other social movements in contemporary Japan.
+
+“It’s not surprising to find a body there,” she said. “But there’s a degree of outrage that a foreigner would choose to trivialize or monetize it through YouTube.”
+
+In the introduction to the original video, Paul denied that his video was “clickbait” and said he was not monetizing the clip “for obvious reasons.”</p></span> – Japan</div>
+    <div class="location"><span class="highlight">3. Poveglia Island<p> Poveglia is a small island located between Venice and Lido in the Venetian Lagoon, of northern Italy. A small canal divides the island into two separate parts. The island first appears in the historical record in 421 and was populated until the residents fled warfare in 1379. For more than 100 years, beginning in 1776, the island was used as a quarantine station for those suffering the plague and other diseases, and later as a mental hospital. The mental hospital closed in 1968, and the island has been vacant ever since. Because of its history, the island is frequently featured on paranormal shows.</p></span> – Italy</div>
+    <div class="location"><span class="highlight">4. Bhangarh Fort<p> Bhangarh Fort is located on the border of the Sariska Reserve in the Aravali range of hills in the Alwar district[5] of Rajasthan.[6] The nearest village is Gola ka Baas.[7]The fort is situated at the foot of the hills on sloping terrain. The ruins of the king's palace are located on the lower slope of the hills; trees surround the pond area and a natural stream falls into the pond within the premises of the palace.[8]
+
+The fort is located 235 kilometres (146 mi) from Delhi and the approach to the entrance gate of the fort in the last 2 kilometres (1.2 mi) stretch of the road is unpaved.[6] The fort is 20 miles (32 km) from Thana Ghazi.[8] The nearest airport is Jaipur International Airport, which is 88.2 km from the fort.</p></span> – India</div>
+    <div class="location"><span class="highlight">5. Château de Brissac<p>The château was originally built as a castle by the Counts of Anjou in the 11th century. After the victory over the English by King Philip II of France, he gave the property to Guillaume des Roches. In the 15th century, the structure was rebuilt by Pierre de Brézé, a wealthy chief minister to King Charles VII of France. During the reign (1515–47) of King Francis I, the property was acquired by René de Cossé, who was named by the King as governor of Anjou and Maine.[3]
+
+During the French Wars of Religion, the château was made a possession in 1589 by the Protestant leader, Henry of Navarre. Severely damaged, the fortress was scheduled to be demolished. However, Charles II de Cossé sided with Henry of Navarre, who soon was crowned King of France. In gratitude, King Henry gave him the property, the noble title of Duke of Brissac and the money to rebuild the château in 1611. </p></span> – France</div>
+    <div class="location"><span class="highlight">6. The Tower of London<p> The Tower of London, officially His Majesty's Royal Palace and Fortress of the Tower of London, is a historic citadel and castle on the north bank of the River Thames in central London, England. It lies within the London Borough of Tower Hamlets, which is separated from the eastern edge of the square mile of the City of London by the open space known as Tower Hill. It was founded toward the end of 1066 as part of the Norman Conquest. The White Tower, which gives the entire castle its name, was built by William the Conqueror in 1078 and was initially a resented symbol of oppression, inflicted upon London by the new Norman ruling class. The castle was also used as a prison from 1100 (Ranulf Flambard, Bishop of Durham) until 1952 (the Kray twins),[3] although that was not its primary purpose. A grand palace early in its history, it served as a royal residence. As a whole, the Tower is a complex of several buildings set within two concentric rings of defensive walls and a moat. There were several phases of expansion, mainly under kings Richard I, Henry III, and Edward I in the 12th and 13th centuries. The general layout established by the late 13th century remains despite later activity on the site.</p></span> – England</div>
+    <div class="location"><span class="highlight">7. Ancient Ram Inn<p> The Ancient Ram Inn is a Grade II* listed building[1] and a former pub located in Wotton-under-Edge, a market town within the Stroud district of Gloucestershire, England. This inn was said to have also been owned by the local St. Mary's Church when first built. The late medieval building was remodelled in the mid to late 16th century.[1]
+
+
+The inn's collection of ghost story press clippings
+The pub is allegedy haunted. The pub is claimed to be the place of former human sacrifice, with burials of children, who either died naturally or were sacrificed, within the pub's buckling walls.[failed verification] This, however, has never been confirmed.[2]</p></span> – England</div>
+    <div class="location"><span class="highlight">8. Banff Springs Hotel<p>The Fairmont Banff Springs, formerly and commonly known as the Banff Springs Hotel, is a historic hotel in western Canada, located in Banff, Alberta. The entire town, including the hotel, is situated in Banff National Park, a national park managed by Parks Canada. At an elevation of 1,414 metres (4,640 ft) above sea level, the hotel overlooks a valley towards Mount Rundle, both of which are situated within the Rocky Mountain mountain range.
+
+Opened in 1888 by the Canadian Pacific Railway, it is one of the earliest of Canada's grand railway hotels. The original five-storey wooden hotel was designed by Bruce Price and was able to accommodate 280 guests. With expansions, the original structure became the North Wing, which was eventually destroyed by fire in April 1926. </p></span> – Canada</div>
+    <div class="location"><span class="highlight">9. La Recoleta Cemetery<p>For the cemetery in Paraguay, see Recoleta Cemetery, Asuncion.
+La Recoleta Cemetery
+Cementerio de la Recoleta
+
+Aerial view of the cemetery
+Map
+Wikimedia | © OpenStreetMap
+Details
+Established	1822[2]
+Location	
+Junín 1760,[1] Buenos Aires
+Country	Argentina
+Coordinates	34°35′17″S 58°23′35″W
+Type	Public
+Size	5.5 hectares (14 acres)[3]
+No. of graves	4691 vaults[4]
+Find a Grave	La Recoleta Cemetery
+La Recoleta Cemetery (Spanish: Cementerio de la Recoleta) is a cemetery located in the Recoleta neighbourhood of Buenos Aires, Argentina. It contains the graves of notable people, including Eva Perón, presidents of Argentina, Nobel Prize winners, the founder of the Argentine Navy, and military commanders such as Julio Argentino Roca. In 2011, the BBC hailed it as one of the world's best cemeteries,[5] and in 2013, CNN listed it among the 10 most beautiful cemeteries in the world.[6] </p></span> – Argentina</div>
+    <div class="location"><span class="highlight">10. The Myrtles Plantation<p> The Myrtles Plantation was built in 1796 by General David Bradford on 600 acres (0.94 sq mi; 2.4 km2) in what was then part of Spanish West Florida and was named "Laurel Grove." Bradford lived there alone for several years, until President John Adams pardoned him for his role in the Pennsylvania Whiskey Rebellion in 1799. He then moved his wife Elizabeth and their five children to the plantation from Pennsylvania.[5] Upon Bradford's death in 1808, his widow Elizabeth continued running the plantation until 1817, when she handed the management to Clarke Woodruff, one of Bradford's former law students, who had married her daughter, Sara Mathilda. The Woodruffs had three children: Cornelia Gale, James, and Mary Octavia, before Sara Mathilda and two of her three children died in 1823 and 1824 of yellow fever.[6][7]</p></span> – USA</div>
+    <div class="location"><span class="highlight">11. Leap Castle<p> There are varied accounts as to when exactly the main tower/keep was constructed, ranging anywhere from the 13th century to the late 15th century,[1] but most likely around 1250 AD. It was built by the O'Bannon clan and was originally called "Léim Uí Bhanáin" (as was the fertile land around the castle which was associated with the Bannon clan) or "Leap of the O'Bannons". The O'Bannons were the "secondary chieftains" of the territory and were subject to the ruling O'Carroll clan. There is evidence that it was constructed on the same site as another ancient stone structure, perhaps ceremonial in nature, and that that area has been occupied consistently since at least the Iron Age (500 BCE) and possibly since Neolithic times.</p></span> – Ireland</div>
+    <div class="location"><span class="highlight">12. Hell Fire Club<p> Hellfire Club was a term used to describe several exclusive clubs for high-society rakes established in Great Britain and Ireland in the 18th Century. The name most commonly refers to Francis Dashwood's Order of the Friars of St Francis of Wycombe.[1] Such clubs, rumour had it, served as the meeting places of "persons of quality"[2] who wished to take part in what were socially perceived as immoral acts, and the members were often involved in politics. Neither the activities nor membership of the clubs are easy to ascertain. The clubs allegedly had distant ties to an elite society known only as "The Order of the Second Circle".</p></span> – Ireland</div>
+    <div class="location"><span class="highlight">13. Dragsholm Slot<p>Dragsholm Slot is one of the oldest secular buildings in Denmark. The original Dragsholm Castle was built around 1215 by the Bishop of Roskilde. During the Middle Ages, the building was modified from the original palace to a fortified castle. During the Count's Feud (1534–36) (Grevens Fejde) it was so strong that it was the only castle on Zealand to withstand the armies of Count Christoffer.[1]
+
+Crownland and prison, 1536–1664
+
+Dragsholm Castle in 1896
+In connection with the Reformation, Dragsholm was confiscated by the Crown along with all other property of the Catholic church. As Crownland during the period from 1536 to 1664, Dragsholm Castle was used as a prison for noble and ecclesiastical prisoners. In the large tower at the northeast corner of the medieval castle, prison cells were made and equipped with toilets and windows depending on the prisoner's crimes, behaviour and the seriousness of his insults towards the King. </p></span> – Denmark</div>
+    <div class="location"><span class="highlight">14. Island of the Dolls<p> In the mid-20th century, Barrera began to collect dolls and hang them around the small island. The island gained notoriety in 1943 when Mexican director Emilio Fernández used it as the location of the film María Candelaria.[2]
+
+After Barrera's death in 2001, his family opened the island to the public as a tourist attraction. In addition to the hundreds of dolls,[3] the grounds host three huts, and a small museum with articles from local newspapers about both the island and the previous owner. In the one-room hut Barrera slept in, the first doll Barrera collected is displayed, as well as Agustina, his favorite doll.[4][5][6]
+
+The Island of the Dolls is accessible to the public via gondola-like boats referred to as trajineras.[7] Most rowers are willing to transport people to the island, but there are those who refuse out of superstition.[8] The journey often includes a tour of the Ecological Area, Ajolote Museum, Apatlaco Canal, Teshuilo Lagoon and Llorona Island</p></span> – Mexico</div>
+    <div class="location"><span class="highlight">15. Edinburgh Vaults<p>The Edinburgh Vaults or South Bridge Vaults are a series of chambers formed in the nineteen arches of the South Bridge in Edinburgh, Scotland. South Bridge was part of the South Bridge Act 1785 and was completed in 1788. For around 30 years, the vaults were used to house taverns, workshops for cobblers and other tradesmen, as well as storage space for said merchants. In later years, the vaults were a hotspot for the homeless and for criminal activity such as illegal gambling taverns, illegal whisky distillery and, according to rumour, bodysnatchers stored corpses there overnight. There is however no proof that the serial killers Burke and Hare ever used the vaults. </p></span> – Scotland</div>
+    <div class="location"><span class="highlight">16. Hoia Forest<p>The forest covers an area of about 3 square kilometers. Its southern border begins on a ridge which runs east-west. It does not contain the steep southern slope of the hill, which rises from the Someșul Mic River. To the north, the forest ends on a smoother slope, which meets the Nadăș River. </p></span> – Romania</div>
+    <div class="location"><span class="highlight">17. Changi Hospital<p>Changi General Hospital (abbreviation: CGH) is a 1000-bed large district general hospital located in Simei, eastern Singapore. It is Singapore's first purpose-built general hospital to serve communities in the east and north-east regions.
+
+The hospital has more than 23 medical services, from general surgery, internal medicine, cardiology, ENT to orthopaedic surgery and sports medicine. It houses six specialist centres – Breast Centre, Changi Sports Medicine Centre, Diabetes Centre, Geriatric Centre, Integrated Sleep Service and Medical Centre for International Travellers. </p></span> – Singapore</div>
+    <div class="location"><span class="highlight">18. Old Jewish Cemetery<p> The Old Jewish Cemetery (Czech: Starý židovský hřbitov) is a Jewish cemetery in Prague, Czech Republic, which is one of the largest of its kind in Europe and one of the most important Jewish historical monuments in Prague. It served its purpose from the first half of the 15th century until 1786. Renowned personalities of the local Jewish community were buried here; among them rabbi Jehuda Liva ben Becalel – Maharal (ca. 1526–1609), businessman Mordecai Meisel (1528–1601), historian David Gans (ca. 1541–1613) and rabbi David Oppenheim (1664–1736). Today the cemetery is administered by the Jewish Museum in Prague.
+
+The cemetery is mentioned in Umberto Eco's The Prague Cemetery, the novel which was named after it.</p></span> – Prague</div>
+    <div class="location"><span class="highlight">19. Fairmont Banff Springs<p> A National Historic Site of Canada, the Fairmont Banff Springs has been a shining example of Canadian hospitality from its inception. William Cornelius Van Horne, the General Manager of the Canadian Pacific Railway, first considered constructing a grand hotel in the Canadian Rockies when several employees of his railroad stumbled across several mineral springs in 1883. Noticing a great opportunity to facilitate travel along the Canadian Pacific Railway, Van Horne immediately set about constructing a brilliant grand dame that would be one of the world’s most luxurious. As such, he commissioned blueprints for an impressive hotel that would be situated at the convergence of the Bow and Spray rivers. Architect Bruce Price lead the design team, who relied upon Châteauesque-style architecture as the source of his inspiration. Construction commenced in 1886 and concluded some two years later. As soon as it debuted as the “Banff Springs Hotel” in 1886, it rapidly became one of the top three mountain resorts in North America.</p></span> – Canada</div>
+  </section>
+
+   <div class="slider">
+    <div class="slider-track">
+      <div class="slide"><img src="haunted 1.jpg" alt="1"></div>
+      <div class="slide"><img src="haunted 2.jpg" alt="2"></div>
+      <div class="slide"><img src="haunted 3.jpg" alt="3"></div>
+      <div class="slide"><img src="haunted 4.jpg" alt="2"></div>
+      <div class="slide"><img src="haunted 5.jpg" alt="2"></div>
+      <div class="slide"><img src="haunted 6.jpg" alt="2"></div>
+      <div class="slide"><img src="haunted 7.jpg" alt="2"></div>
+      <!-- Repeat the same images to loop smoothly -->
+      <div class="slide"><img src="haunted 1.jpg" alt="1"></div>
+      <div class="slide"><img src="haunted 2.jpg "alt="2"></div>
+      <div class="slide"><img src="haunted 3.jpg" alt="3"></div>
+      <div class="slide"><img src="haunted 4.jpg" alt="3"></div>
+      <div class="slide"><img src="haunted 5.jpg" alt="3"></div>
+      <div class="slide"><img src="haunted 6.jpg" alt="3"></div>
+      <div class="slide"><img src="haunted 7.jpg" alt="3"></div>
+    </div>
+  </div>
+
+  <div class="ghost"></div>
+
+  <script>
+    function toggleLocations() {
+      const locations = document.getElementById('locations');
+      if (locations.style.display === 'none' || locations.style.display === '') {
+        locations.style.display = 'block';
+      } else {
+        locations.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
+ 
