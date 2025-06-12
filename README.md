@@ -1,4 +1,4 @@
-##🌍 Blog Website
+## 🌍 Blog Website
 
 This project is a visually rich, multi-page HTML website that showcases eerie and forgotten locations from around the world. It serves as a storytelling platform for haunted places, lost cities, and ancient legends.
 
@@ -8,7 +8,7 @@ This project is a visually rich, multi-page HTML website that showcases eerie an
 👉 [Click here to visit website](https://hitaishini1708.github.io/Blog/blog%20website/)
 
 ----
-##✨ Features
+## ✨ Features
 🎨 Beautiful UI: Fully styled with elegant typography and responsive layouts.
 
 🧟 Haunted Locations: Interactive section revealing haunted spots from around the world.
