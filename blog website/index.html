@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mysterious Places</title>
+  <link rel="stylesheet" href="blog.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ====== top nav ====== -->
+  <header class="topbar">
+    <div class="container">
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== hero ====== -->
+  <section class="hero">
+    <button class="arrow left">❮</button>
+    <div class="hero-content"></div>
+      <h1>MYSTERIOUS PLACES</h1>
+      <p class="tagline">FEATURED PLACES  |  HIDE WORLD</p>
+    </div>
+    <button class="arrow right">❯</button>
+  </section>
+
+  <!-- ====== category bar ====== -->
+  <div class="category-bar">
+    <div class="container">
+      <ul class="cat-list">
+        <li><a href="#">Categories ▾</a></li>
+        <li><a href="#">Location ▾</a></li>
+        <li><a href="#">Lost Places</a></li>
+        <li><a href="#">Like Rating</a></li>
+      </ul>
+      <form class="search-box">
+        <input type="text" placeholder="Search…" aria-label="Search">
+        <button type="submit">🔍</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ====== main grid ====== -->
+  <main class="container grid">
+    <!-- === left  column === -->
+    <section class="content">
+      <h2>Key and categories</h2>
+
+      <article class="feature-card">
+        <img src="haunted.jpg"alt="">
+        <div class="card-body">
+          <h3>Haunted Locations</h3>
+          <p>These dim and often isolated places…</p>
+          <a href="haunted.html" class="btn">Read More</a>
+        </div>
+      </article>
+
+      <article class="mini-card">
+        <img src="lost cities.jpg"alt="">
+        <h3>Lost Cities</h3>
+        <p>The most iconic…</p>
+        <a href="lost cities.html" class="btn small">Album Guide</a>
+      </article>
+
+      <h2>Shows or Eocielty</h2>
+      <div class="card-grid">
+        <article class="thumb-card">
+          <img src="shows and eocielty.jpg" alt="">
+          <h4>Urban Legends</h4>
+        </article>
+        <article class="thumb-card">
+          <img src="massive.jpg" alt="">
+          <h4>Mansive? You’ve never…</h4>
+        </article>
+        <article class="thumb-card">
+          <img src="ruins of empire.jpg" alt="">
+          <h4>Ruins of an empire…</h4>
+        </article>
+      </div>
+    </section>
+
+    <!-- === sidebar === -->
+    <aside class="sidebar">
+      <div class="widget">
+        <h4>Ancestry</h4>
+        <img src="ancestry.jpg"alt="">
+        <ul>
+          <li><a href="#">Sea Spirits</a><img src="sea spirit.jpg"alt=""></li>
+          <li><a href="#">Stone Guardians</a><img src="stone guardians.jpg"alt=""></li>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <h4>Feature files</h4>
+        <img src="feature files.jpg"alt="">
+      </div>
+
+      <div class="widget">
+        <h4>Social</h4>
+        <div class="social">
+          <img src="social.jpg"alt="">
+          <a href="#">🐦</a><a href="#">📷</a><a href="#">▶</a>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+
+<div class="bottom-feedback-form">
+  Feedback form:
+  <form >
+    
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="feedback" placeholder="Your Feedback" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+  <footer class="site-footer">
+    © 2025 Mysterious Places
+  </footer>
+</body>
+</html>
